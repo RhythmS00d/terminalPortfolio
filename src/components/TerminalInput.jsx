@@ -1,14 +1,16 @@
 import React from "react";
 import { useState, useRef } from "react";
 
+import { triggerCommand } from "../utils/triggerCommand";
+
 export const TerminalInput = ({ setCommandList }) => {
   const [inputValue, setInputValue] = useState("/");
   const inputRef = useRef();
 
   const handleKeyDown = () => {
     if(inputValue.length < 2) return;
-    
-    setCommandList((prev) => [...prev, inputValue]);
+
+    triggerCommand(inputValue, setCommandList)
     setInputValue("/");
     inputRef.current.focus();
   };
@@ -18,7 +20,7 @@ export const TerminalInput = ({ setCommandList }) => {
       <input
         type="text"
         placeholder="Enter command here....."
-        value={inputValue}
+        value={inputValue.toLowerCase()}
         onChange={(e) => setInputValue(e.target.value)}
         autoFocus
         ref={inputRef}

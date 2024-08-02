@@ -12,7 +12,7 @@ function App() {
   return (
     <main>
       <CommandList commandList={commandList} />
-      <TerminalInput setCommandList={setCommandList} />
+      <TerminalInput setCommandList={setCommandList}/>
     </main>
   );
 }
