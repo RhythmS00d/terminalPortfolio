@@ -14,7 +14,6 @@ const defaultCommands = [
 ];
 
 const commandActions = {
-  help,
   linkedin,
   email,
   education,
@@ -42,10 +41,6 @@ export function triggerCommand(command, setCommandList) {
       `Error: command *${cmd}* does not exist! Need help? Enter /help`,
     ]);
   }
-}
-
-function help() {
-  //TODO: open help modal
 }
 
 function linkedin(updateList) {
@@ -136,13 +131,14 @@ function certificates(updateList) {
         <strong>Kreativstorm Frontend Trainee</strong>
         <p>
           Understanding of how to use Js, HTML, and CSS. Built several web based
-          projects for great web development knowl- edge. 
-          (<a
+          projects for great web development knowl- edge. (
+          <a
             href="https://api.credsverse.com/v1/qr/3ad1649a-4e03-4f57-b03c-6ba5efef167b"
             target="_blank"
           >
             View certificate
-          </a>)
+          </a>
+          )
         </p>
       </div>
       <div>
@@ -152,10 +148,11 @@ function certificates(updateList) {
           accelerate their pace of innovation, how to use APIs and
           microservices, and to effectively collaborate across teams to build
           open-source systems that use data to learn and contribute to socially
-          responsible cognitive solutions. 
-          (<a href="https://www.credly.com/go/ePdcZs6R" target="_blank">
+          responsible cognitive solutions. (
+          <a href="https://www.credly.com/go/ePdcZs6R" target="_blank">
             View certificate
-          </a>)
+          </a>
+          )
         </p>
       </div>
     </section>

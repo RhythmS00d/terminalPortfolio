@@ -1,9 +1,6 @@
 import React from "react";
-import { useState } from "react";
 
-export const HelpModal = () => {
-  const [page, setPage] = useState(1);
-
+export const HelpModal = ({ modal, setModal }) => {
   const content = (
     <div>
       <p>
@@ -15,19 +12,17 @@ export const HelpModal = () => {
       <h1>
         <strong>How to use the terminal commands?</strong>
       </h1>
-      <p>
-        <ul>
-          <li>
-            Each command starts with a '/', which is already fixed in the input
-            field.
-          </li>
-          <li>
-            Commands can be used by clicking the submit button or by pressing
-            enter.
-          </li>
-          <li>Each incorrect entered command will give an error.</li>
-        </ul>
-      </p>
+      <ul>
+        <li>
+          Each command starts with a '/', which is already fixed in the input
+          field.
+        </li>
+        <li>
+          Commands can be used by clicking the submit button or by pressing
+          enter.
+        </li>
+        <li>Each incorrect entered command will give an error.</li>
+      </ul>
       <h1>List of all available commands</h1>
       <ul>
         <li>
@@ -63,12 +58,15 @@ export const HelpModal = () => {
           <strong>hobbies</strong> Retrieves my hobbies.
         </li>
       </ul>
-      <button>Continue</button>
+      <button onClick={() => setModal(false)}>Continue</button>
     </div>
   );
 
   return (
-    <section id="modalContainer">
+    <section
+      id="modalContainer"
+      className={modal ? "openModal" : "closeModal"}
+    >
       <div id="modal">{content}</div>
     </section>
   );
