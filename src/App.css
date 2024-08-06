@@ -79,7 +79,7 @@ input {
   background-color: transparent;
   border: none;
   outline: none;
-  width: 80%;
+  width: 50%;
   font-size: 1em;
   caret-color: var(--text-secondary);
 }
