@@ -13,9 +13,7 @@ function App() {
     <div className="welcome-container">
       <p>
         <span className="visitor">visitor</span>@
-        <span className="location">
-          terminal-portfolio-seven-xi.vercel.app
-        </span>
+        <span className="location">{window.location.host}</span>
         :-$ welcome
       </p>
       <p>Welcome to my terminal based portfolio. (Version 1.0.0)</p>

@@ -22,7 +22,7 @@ export const TerminalInput = ({ setCommandList }) => {
     <section className="input-container">
       <label htmlFor="terminal-input">
         <span className="visitor">visitor</span>@
-        <span className="location">terminal-portfolio-seven-xi.vercel.app</span>
+        <span className="location">{window.location.host}</span>
         :-$
         <input
           id="terminal-input"
