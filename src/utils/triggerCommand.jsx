@@ -37,7 +37,10 @@ export function triggerCommand(command, setCommandList) {
       <div>
         <p>
           <span className="visitor">visitor</span>@
-          <span className="location">example</span>:-$ {command}
+          <span className="location">
+            terminal-portfolio-seven-xi.vercel.app
+          </span>
+          :-$ {command}
         </p>
         {item}
       </div>

@@ -13,13 +13,19 @@ function App() {
     <div className="welcome-container">
       <p>
         <span className="visitor">visitor</span>@
-        <span className="location">example</span>:-$ welcome
+        <span className="location">
+          terminal-portfolio-seven-xi.vercel.app
+        </span>
+        :-$ welcome
       </p>
       <p>Welcome to my terminal based portfolio. (Version 1.0.0)</p>
       <p>----</p>
       <p>
         This project's source code can be found in this{" "}
-        <a target="_blank" href="https://github.com/RhythmS00d/terminalPortfolio">
+        <a
+          target="_blank"
+          href="https://github.com/RhythmS00d/terminalPortfolio"
+        >
           Github Repo
         </a>
         .
