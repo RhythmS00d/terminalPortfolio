@@ -19,7 +19,10 @@ function App() {
       <p>----</p>
       <p>
         This project's source code can be found in this{" "}
-        <a href="">Github Repo</a>.
+        <a target="_blank" href="https://github.com/RhythmS00d/terminalPortfolio">
+          Github Repo
+        </a>
+        .
       </p>
       <p>----</p>
       <p>For a list of available commands, type 'help'.</p>
