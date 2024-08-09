@@ -2,9 +2,11 @@ import React from "react";
 import { useState, useRef } from "react";
 
 import { triggerCommand } from "../utils/triggerCommand";
+import { UserStates } from "../contexts/AppContext";
 
-export const TerminalInput = ({ setCommandList }) => {
+export const TerminalInput = () => {
   const [inputValue, setInputValue] = useState("");
+  const { setCommandList } = UserStates();
   const inputRef = useRef();
 
   const handleKeyDown = (key) => {

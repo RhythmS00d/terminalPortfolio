@@ -1,12 +1,22 @@
-import React from 'react'
+import React from "react";
 
-export const Header = ({setCurrentPage}) => {
+import { UserStates } from "../contexts/AppContext";
+
+export const Header = () => {
+  const { setCurrentPage } = UserStates();
   return (
     <header>
-        <div>
-            <button value="Terminal" onClick={(e) => setCurrentPage(e.target.value)}>Terminal</button>
-            <button value="Resume" onClick={(e) => setCurrentPage(e.target.value)}>Resume</button>
-        </div>
+      <div>
+        <button
+          value="Terminal"
+          onClick={(e) => setCurrentPage(e.target.value)}
+        >
+          Terminal
+        </button>
+        <button value="Resume" onClick={(e) => setCurrentPage(e.target.value)}>
+          Resume
+        </button>
+      </div>
     </header>
-  )
-}
+  );
+};
